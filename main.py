@@ -16,6 +16,6 @@ with open("tokens.txt") as f:
         url = "https://discordapp.com/api/v6/users/@me/library"
         r = requests.get(url, headers=headers)
         if r.status_code == 200:
-            print("{} worked.".format(line.strip("\n")))
+            print(f"{token} worked.".format(line.strip("\n")))
         else:
-            print("Token didn't work.")
+            print(f"{token} didn't work.")
